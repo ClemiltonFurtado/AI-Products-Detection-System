@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+runs/
+Supermercado
+*.jpg
+data/uploads/
