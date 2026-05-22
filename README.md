@@ -40,7 +40,7 @@ AI-Products-Detection-System/
 │   └── test_api.html          # Standalone HTML tool to test the API endpoint
 │
 └── requirements.txt           # Python dependencies
-
+```
 ---
 
 ## ⚙️ How to Run the Project
@@ -49,18 +49,22 @@ AI-Products-Detection-System/
 ```bash
 git clone https://github.com/clemiltonfurtado/AI-Products-Detection-System.git
 cd AI-Products-Detection-System
+```
 
 **2. Create and activate a vitrual environment
 ```bash
 # Linux/macOS
 python3 -m venv venv
 source venv/bin/activate
+```
 
 **3. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 **4. Start the Flask Server
 ```bash
 cd src
 python main.py
+```
