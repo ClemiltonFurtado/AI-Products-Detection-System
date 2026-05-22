@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time</title>
+</head>
+<body>
+    <h2>Real Time using Webcam</h2>
+    <a href="/"><button>Back to Main Menu</button></a><br><br>
+    
+    <div style="width: 640px; height: 480px; background-color: #ccc; display: flex; align-items: center; justify-content: center;">
+        <img src="{{ url_for('video_feed') }}" width="640" height="480" style="border: 2px solid #ccc;">
+    </div>
+</body>
+</html>

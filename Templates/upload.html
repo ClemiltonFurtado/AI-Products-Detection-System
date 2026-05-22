@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h2>Upload a new image for analysis</h2>
+    <a href="/"><button>Back to Main Menu</button></a><br><br>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul style="color: red;">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/*">
+      <input type="submit" value="Upload">
+    </form>
+
+    {% if uploaded_image %}
+    <div class="result-container" style="margin-top: 20px;">
+        <h3>Detection Result:</h3>
+        <img src="{{ uploaded_image }}" alt="Image processed by YOLO" style="max-width: 100%; border: 2px solid #ccc; border-radius: 8px;">
+    </div>
+{% endif %}
+</body>
+</html>
