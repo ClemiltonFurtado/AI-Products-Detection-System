@@ -51,19 +51,19 @@ git clone https://github.com/clemiltonfurtado/AI-Products-Detection-System.git
 cd AI-Products-Detection-System
 ```
 
-**2. Create and activate a vitrual environment
+**2. Create and activate a vitrual environment**
 ```bash
 # Linux/macOS
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-**3. Install dependencies
+**3. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-**4. Start the Flask Server
+**4. Start the Flask Server**
 ```bash
 cd src
 python main.py
