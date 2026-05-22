@@ -27,6 +27,7 @@ class Wutils:
         
         self.app = Flask(__name__, template_folder=template_dir)
         self.app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+        os.makedirs(self.app.config['UPLOAD_FOLDER'], exist_ok=True)
         
         # 1. INSTANTIATE THE AI ONCE GLOBALLY
         print("[INFO] Initializing Global AI Engine...")
