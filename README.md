@@ -1,6 +1,6 @@
 # AI-Products-Detection-System
 
-A complete Computer Vision and Object Detection system built for a Camera Inventory System. This project provides a web interface for image processing, a real-time webcam detection module, and a RESTful API for seamless integration with external systems.
+A complete Computer Vision and Object Detection system built for a Camera Inventory System. This project provides a web interface for image processing, a real-time webcam detection module, and a RESTful API for  integration with external systems.
 
 ## 🎥 Demo Video (Must Watch)
 **[TODO]**
@@ -68,3 +68,16 @@ pip install -r requirements.txt
 cd src
 python main.py
 ```
+
+## 🔌 Testing the API (`/detect` Endpoint)
+
+The project includes a dedicated `test/` directory containing both a graphical and a programmatic client to validate the REST API endpoint independently from the main web application UI.
+
+### 1. Web-Based Test Client (`test_api.html`)
+This is a standalone HTML interface that runs completely in the browser and simulates a frontend application making an asynchronous `POST` request directly to the API backend.
+
+**How to use:**
+1. Ensure the Flask server is active.
+2. Open `test/test_api.html` directly in any web browser (double-click the file).
+3. Choose an image file and click **Upload Image (POST)**.
+4. The browser will redirect to show the raw JSON response containing classes and confidence scores directly from the server.
